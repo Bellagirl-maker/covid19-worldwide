@@ -1,0 +1,13 @@
+.back-stats {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0.5rem;
+  background-color: #DF4A84;
+  color: white;
+}
+
+.mic-settings {
+  display: flex;
+  gap: 0.5rem;
+}

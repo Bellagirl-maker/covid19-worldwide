@@ -1,0 +1,12 @@
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem 7.438rem 1.625rem 1.688rem;
+
+}
+
+.card {
+    height: 200px;
+    border: 1px solid #DF4A84;
+    padding: 1rem;
+}
