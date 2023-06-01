@@ -3,12 +3,8 @@
   justify-content: space-between;
   list-style: none;
   padding: 0.5rem;
-  background-color: #DF4A84;
+  background-color: #df4a84;
   color: white;
-}
-
-.back-stats li {
-  size: 2rem;
 }
 
 .mic-settings {
