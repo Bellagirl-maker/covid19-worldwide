@@ -1,5 +1,28 @@
 .details {
-    align-items: center;
+    padding: 20px;
+  }
+
+  .Country {
+    padding: 2rem;
+  }
+  
+  .country-data {
     display: flex;
-    justify-content: space-between
-}
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .country-data li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 1.5rem 0.5rem;
+  }
+
+  .country-data .deep {
+    background-color: #DF4A84;
+    color: #fff;
+  }  
+  
+  

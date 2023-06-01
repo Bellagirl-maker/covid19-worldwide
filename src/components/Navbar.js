@@ -8,7 +8,7 @@ function Navbar() {
     <nav>
       <div className="header">
         <ul className="back-stats">
-          <li><NavLink to="/details"><HiChevronLeft /></NavLink></li>
+          <li><NavLink to="/"><HiChevronLeft /></NavLink></li>
           <li>Covid Stats</li>
           <li className="mic-settings">
             <div><HiMicrophone /></div>

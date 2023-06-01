@@ -7,6 +7,10 @@
   color: white;
 }
 
+.back-stats li {
+  size: 2rem;
+}
+
 .mic-settings {
   display: flex;
   gap: 0.5rem;

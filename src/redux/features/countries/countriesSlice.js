@@ -21,8 +21,6 @@ export const fetchCountries = createAsyncThunk('countries/getCountries', async (
 export const singleCountry = createAsyncThunk('country/getCountry', async ({ country }) => {
   try {
     const response = await axios.get(`${baseURL}/${country}`);
-    console.log(country);
-    console.log(response.data);
     return response.data;
   } catch (err) {
     return err.message;

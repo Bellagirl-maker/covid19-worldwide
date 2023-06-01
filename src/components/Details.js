@@ -6,56 +6,56 @@ import '../styles/Details.css';
 
 const Details = () => {
   const dispatch = useDispatch();
-  const loading = useSelector((state) => state.countries.Loading);
+  const loading = useSelector((state) => state.countries.loading);
   const getCountry = useSelector((state) => state.countries.singleItem);
-  const params = useParams();
+  const { country } = useParams();
 
   useEffect(() => {
-    dispatch(singleCountry(params.country));
-  }, [dispatch, params.country]);
+    if (country) {
+      dispatch(singleCountry({ country }));
+    }
+  }, [dispatch, country]);
 
   return (
-
     <div>
       {loading ? (
         <p>Loading...</p>
       ) : (
-
         <div className="details">
-
-          {getCountry.country}
-          <p>
-            {getCountry.population}
-            {' '}
-          </p>
-          <p>
-            {getCountry.continents}
-            {' '}
-          </p>
-          <p>
-            {getCountry.recovered}
-            {' '}
-          </p>
-          <p>
-            {getCountry.deaths}
-            {' '}
-          </p>
-          <p>
-            {getCountry.tests}
-            {' '}
-          </p>
-          <p>
-            {getCountry.active}
-            {' '}
-          </p>
-          <p>
-            {getCountry.critical}
-            {' '}
-          </p>
+          <h2 className="Country">{getCountry.country}</h2>
+          <ul className="country-data">
+            <li className="deep">
+              <li>Population</li>
+              <li>{getCountry.population}</li>
+            </li>
+            <li className="light">
+              <li>Continent</li>
+              <li>{getCountry.continent}</li>
+            </li>
+            <li className="deep">
+              <li>Recovered</li>
+              <li>{getCountry.recovered}</li>
+            </li>
+            <li className="light">
+              <li>Deaths:</li>
+              <li>{getCountry.deaths}</li>
+            </li>
+            <li className="deep">
+              <li>Tests</li>
+              <li>{getCountry.tests}</li>
+            </li>
+            <li className="light">
+              <li>Active</li>
+              <li>{getCountry.active}</li>
+            </li>
+            <li className="deep">
+              <li>Critical</li>
+              <li>{getCountry.critical}</li>
+            </li>
+          </ul>
         </div>
       )}
     </div>
-
   );
 };
 
