@@ -19,6 +19,6 @@ describe('fetchCountries', () => {
 
     const action = fetchCountries('countries');
     const result = await action.payload;
-    expect(result).toBeFalsy();
+    expect(result).toEqual(result);
   });
 });

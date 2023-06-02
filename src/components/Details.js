@@ -25,32 +25,32 @@ const Details = () => {
           <h2 className="Country">{getCountry.country}</h2>
           <ul className="country-data">
             <li className="deep">
-              <li>Population</li>
-              <li>{getCountry.population}</li>
+              <p>Population</p>
+              <p>{getCountry.population}</p>
             </li>
             <li className="light">
-              <li>Continent</li>
-              <li>{getCountry.continent}</li>
+              <p>Continent</p>
+              <p>{getCountry.continent}</p>
             </li>
             <li className="deep">
-              <li>Recovered</li>
-              <li>{getCountry.recovered}</li>
+              <p>Recovered</p>
+              <p>{getCountry.recovered}</p>
             </li>
             <li className="light">
-              <li>Deaths:</li>
-              <li>{getCountry.deaths}</li>
+              <p>Deaths</p>
+              <p>{getCountry.deaths}</p>
             </li>
             <li className="deep">
-              <li>Tests</li>
-              <li>{getCountry.tests}</li>
+              <p>Tests</p>
+              <p>{getCountry.tests}</p>
             </li>
             <li className="light">
-              <li>Active</li>
-              <li>{getCountry.active}</li>
+              <p>Active</p>
+              <p>{getCountry.active}</p>
             </li>
             <li className="deep">
-              <li>Critical</li>
-              <li>{getCountry.critical}</li>
+              <p>Critical</p>
+              <p>{getCountry.critical}</p>
             </li>
           </ul>
         </div>
