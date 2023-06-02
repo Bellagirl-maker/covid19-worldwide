@@ -1,9 +1,11 @@
 .map-box {
-  margin-top: 2rem;
+  margin: 2rem auto 0;
+  text-align: center;
 }
 
 .title {
   padding: 1rem;
+  text-align: center;
 }
 
 .card-container {
@@ -34,5 +36,13 @@
 @media (max-width: 768px) {
   .card-container {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .map-box {
+    width: 100%;
+  }
+
+  .covid-map {
+    width: 100%;
   }
 }
