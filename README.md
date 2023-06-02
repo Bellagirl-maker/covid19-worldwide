@@ -49,7 +49,8 @@ This Project was buiilt with React and Redux
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link]
+- [Live Demo Link](https://www.loom.com/share/7b0db8a8f9824a1fa52a5ffa9c440acf)
+- [Live site Link](https://lively-platypus-c3877d.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
